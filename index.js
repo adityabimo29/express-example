@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 let data = require('./data');
-
+const PORT = process.env.PORT;
 app.use(bodyParser.urlencoded({ extended:false }))
 
 // parse application/json
@@ -90,6 +90,6 @@ app.post('/movie',(req,res)=>{
 //////////////////////////////////////// tr
 
 
-app.listen(6700,()=>{
+app.listen(PORT,()=>{
     console.log('check my port')
 })
