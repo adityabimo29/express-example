@@ -11,9 +11,9 @@ app.use(bodyParser.json())
 app.use(cors());
 
 
-// app.get('/',(req,res)=>{
-//     res.send('Hello World')
-// })
+app.get('/',(req,res)=>{
+    res.send('Hello World')
+})
 
 app.get('/test/:id',(req,res)=>{
     res.send('this is params');
@@ -33,7 +33,7 @@ app.delete('/hapus',(req,res)=>{
 /////////////////////////////////////////////
 ////////////////////////////////////////////
 ///////////////////////////////////////////
-app.get('/',(req,res)=>{
+app.get('/movie',(req,res)=>{
     res.json(data)
 })
 
